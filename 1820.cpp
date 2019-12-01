@@ -1,22 +1,24 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include <algorithm>
 
-void main()
+using namespace std;
+int main()
 {
     int a, radix;
-    std::vector<std::string> results;
+    vector<string> results;
 
-    while (!std::cin.eof())
+    while (!cin.eof())
     {
-        std::cin >> a >> radix;
-        // std::cout << a << " " << radix << std::endl;
-        if (std::cin.fail())
+        cin >> a >> radix;
+        // cout << a << " " << radix << endl;
+        if (cin.fail())
         {
             continue;
         }
 
-        std::string res;  
+        string res;  
         do
         {
             int divided; 
@@ -52,13 +54,14 @@ void main()
         }
         while (a != 0);
 
-        std::reverse(res.begin(), res.end());
+        reverse(res.begin(), res.end());
         results.push_back(res);
     }
 
-    for (std::vector<std::string>::iterator it = results.begin(); it != results.end(); it++)
+    for (vector<string>::iterator it = results.begin(); it != results.end(); it++)
     {
-        std::cout << *it << std::endl;
+        cout << *it << endl;
     }
 
+    return 0;
 }

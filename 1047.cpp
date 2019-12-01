@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void main()
+int main()
 {
     int a;
     int div[3];
@@ -39,4 +39,5 @@ void main()
         printf("n");
     }
 
+    return 0;
 }

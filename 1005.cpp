@@ -20,9 +20,10 @@ input: x, a, y, b
 
 #include <stdio.h>
 
-void main()
+int main()
 {
     int x, a, y, b;
     scanf("%d %d %d %d", &x, &a, &y, &b);
     printf("%.2f", (b * (float)y - x * (float)a) / (float)(b - a));
+    return 0;
 }
