@@ -18,6 +18,7 @@ void main()
         div[i] = a % b[i];
     }
 
+    // this is a flag to tell if 3, 5, 7 can divide it
     int flag = 0;
     for (i = 0; i < 3; i++)
     {
